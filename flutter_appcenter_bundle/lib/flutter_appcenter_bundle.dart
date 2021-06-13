@@ -40,7 +40,7 @@ class AppCenter {
 
     await configureAnalyticsAsync(enabled: enableAnalytics);
     await configureCrashesAsync(enabled: enableCrashes);
-    await configureDistributeAsync(enabled: enableDistribute);
+    // await configureDistributeAsync(enabled: enableDistribute);
 
     await _methodChannel.invokeMethod('start', <String, dynamic>{
       'secret': appsecret.trim(),
